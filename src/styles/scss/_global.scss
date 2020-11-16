@@ -1,8 +1,13 @@
 // Global styling for this template
+ .separador {
+   display:block;
+   margin: 1rem 0rem;
+ }
+html {
+  scroll-behavior: smooth;
+}
 
-
-body {
-  
+body {  
   overflow-x: hidden;
   @include font ('dosisbold');
   font-size: 1.3rem;
@@ -14,16 +19,12 @@ body {
 }
 
 .rounded-bm{ 
-    border-radius:10px;    
-           
-           
+    border-radius:10px;      
     }
 
-    .intro-video {
-    
+    .intro-video {    
     margin-bottom:20px;
     }
-
 
 .sombra-marco{
   @include sombra-marco;  
@@ -67,6 +68,10 @@ h6 {
 section {
   padding: 15px 0;
 
+  &#videos{
+    margin-top:200px;
+  }
+
   h1.section-subheading{
       font-size: 1.3rem;
     }
@@ -77,10 +82,6 @@ section {
     margin-top: 0;
     margin-bottom: 50px;
     color: #24C5D9
-
-    
-
-
   }
   #grupo{
       margin-top:-50px;
@@ -255,8 +256,60 @@ Animacion dde boton
 
 
 .shadow-pulse
-{
-  
+{  
   animation: shadow-pulse 2s infinite;
 }
+
+.modal-content{
+  color: $primary!important;
+}
+
+.modal-dialog {
+  max-width: 1000px;
+  margin: 1.75rem auto;
+}
+
+
+.modal-header {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+}
+
+.mi-modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: calc(.3rem - 1px);
+  border-bottom-left-radius: calc(.3rem - 1px);
+  .btn{
+    font-size: 1.75rem;
+    padding: 0.25rem 0.15rem;
+
+    .fa-angle-left{
+      margin-right:2rem;
+    }
+
+    .fa-angle-right{
+      margin-left:2rem;
+    }    
+  }
+  .separador-horizontal{
+    margin: 0rem 1rem;
+  }
+}
+
+
+
+
+
+
 

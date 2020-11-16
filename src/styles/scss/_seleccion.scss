@@ -19,12 +19,13 @@
 
     &.visible{
         right:25px;
-    }      
+    }  
   
 
     &.rotate{
         transition: transform $transition-time ease-out;
-        transform:rotate(-90deg);        
+        transform:rotate(-90deg);
+        right:30px;        
     }
 
     @media(min-width:768px){

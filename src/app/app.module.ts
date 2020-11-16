@@ -16,6 +16,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { MatToolbarModule } from '@angular/material/toolbar';
 //import { MatSliderModule } from '@angular/material/slider';
 import { LandingComponent } from './landing/landing.component';
+import { CommonModule } from '@angular/common';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NombreComponent } from './nombre/nombre.component';
+
 
 
 
@@ -27,11 +31,14 @@ import { LandingComponent } from './landing/landing.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    LandingComponent
+    LandingComponent,
+    NombreComponent
   ],
-  imports: [
+  imports: [    
+    NgbModule,
    // MatToolbarModule,
     //MatSliderModule,
+    CommonModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
