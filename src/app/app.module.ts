@@ -19,6 +19,12 @@ import { LandingComponent } from './landing/landing.component';
 import { CommonModule } from '@angular/common';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NombreComponent } from './nombre/nombre.component';
+import { SumaComponent } from './tareas/suma/suma.component';
+import { SumaConComponent } from './tareas/suma-con/suma-con.component';
+import { TareaComponent } from './tareas/tarea/tarea.component';
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { PanelComponent } from './shared/panel/panel.component';
+import { LefSideComponent } from './shared/lef-side/lef-side.component';
 
 
 
@@ -32,7 +38,14 @@ import { NombreComponent } from './nombre/nombre.component';
     DashboardComponent,
     HeroSearchComponent,
     LandingComponent,
-    NombreComponent
+    NombreComponent,
+    SumaComponent,
+    SumaConComponent,
+    TareaComponent,
+  
+    NavBarComponent,
+    PanelComponent,
+    LefSideComponent
   ],
   imports: [    
     NgbModule,

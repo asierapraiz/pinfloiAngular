@@ -1,9 +1,12 @@
 import { HostListener, Component, OnInit } from '@angular/core';
 import { Juego } from "../models/juego.model";
 import { Tarea } from "../models/tarea.model";
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
-import {Router, ActivatedRoute} from '@angular/router';
-import { ViewportScroller } from '@angular/common';
+import { NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { Router} from '@angular/router';
+import { JsonPipe, ViewportScroller } from '@angular/common';
+
+import '../../assets/js/scripts.js';
+
 
 
 
@@ -13,6 +16,8 @@ import { ViewportScroller } from '@angular/common';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
+
+  
 
   tareas: Tarea[] = [
     { id: 1, 'name': 'amigos', 'selected': false },
@@ -48,12 +53,12 @@ export class LandingComponent implements OnInit {
   
 
   constructor(private viewportScroller: ViewportScroller, private modalService: NgbModal, private router: Router) {
-  
+    
    }
   
 
   ngOnInit(): void {
-
+   
   }
 
   @HostListener("window:scroll")
